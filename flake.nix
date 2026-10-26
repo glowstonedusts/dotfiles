@@ -34,6 +34,8 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            # Keep a copy of any existing file that home-manager replaces.
+            home-manager.backupFileExtension = "backup";
             home-manager.extraSpecialArgs = { inherit user pkgs-unstable; };
             home-manager.users.${user} = import ./home.nix;
           }
