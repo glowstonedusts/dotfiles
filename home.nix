@@ -1,4 +1,4 @@
-{ config, pkgs, user, ... }:
+{ config, pkgs, pkgs-unstable, user, ... }:
 
 let
   dotfiles = "${config.home.homeDirectory}/.dotfiles";
@@ -16,6 +16,8 @@ in
     jq        # json on the command line
     lazygit
     neovim
+    wezterm
+    pkgs-unstable.herdr
     # the font everything renders in
     nerd-fonts.hack
   ];
