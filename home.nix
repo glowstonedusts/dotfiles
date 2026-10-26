@@ -46,6 +46,7 @@ in
       m = "git switch main";
       cc = "claude --dangerously-skip-permissions";
       co = "codex --full-auto";
+      keys = "less ~/.dotfiles/CHEATSHEET.md";
     };
   };
 
