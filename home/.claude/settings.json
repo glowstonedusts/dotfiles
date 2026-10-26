@@ -10,5 +10,6 @@
   },
   "skipDangerousModePermissionPrompt": true,
   "agentPushNotifEnabled": true,
-  "inputNeededNotifEnabled": true
+  "inputNeededNotifEnabled": true,
+  "hooks": {"SessionStart":[{"matcher":"^(startup|resume|clear|compact|fork)$","hooks":[{"type":"command","command":"bash '/Users/Hussain/.claude/hooks/herdr-agent-state.sh' session","timeout":10}]}]}
 }

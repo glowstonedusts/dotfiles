@@ -32,6 +32,9 @@ in
     enable = true;
     autosuggestion.enable = true;      # ghost text from history
     syntaxHighlighting.enable = true;  # commands turn green when valid
+    # -u: load completions without the "insecure directories" prompt.
+    # It is needed when another account owns Homebrew (/opt/homebrew).
+    completionInit = "autoload -U compinit && compinit -u";
     initContent = ''
       bindkey '^f' autosuggest-accept
     '';
