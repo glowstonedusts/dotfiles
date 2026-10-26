@@ -22,6 +22,10 @@ in
     nerd-fonts.hack
   ];
   fonts.fontconfig.enable = true;
+  # Copy .app bundles (WezTerm) into ~/Applications/Home Manager Apps instead
+  # of linking them, so Spotlight and Launchpad can find them.
+  targets.darwin.linkApps.enable = false;
+  targets.darwin.copyApps.enable = true;
   home.sessionVariables.EDITOR = "nvim";
 
   programs.zsh = {
