@@ -38,13 +38,25 @@ If you forget a key: `ctrl+b` then `?` shows all keys.
 | `ctrl+b` `b`          | Show / hide sidebar (agents panel)      |
 | `ctrl+b` `q`          | Detach. All keeps running. `herdr` = back |
 
-### Copy text
-| Key                   | Action                          |
-|-----------------------|---------------------------------|
-| `ctrl+b` `y`          | Copy mode                       |
-| `v` or `space`        | Start selection                 |
-| `y` or `enter`        | Copy                            |
-| `q` or `esc`          | Cancel                          |
+### Scroll up and copy text (no mouse)
+| Key                   | Action                                   |
+|-----------------------|------------------------------------------|
+| `ctrl+b` `y`          | Copy mode (scroll back in the pane)      |
+| `k` / `j`             | Up / down one line                       |
+| `ctrl+u` / `ctrl+d`   | Up / down half a screen                  |
+| `fn+up` / `fn+down`   | Up / down one screen (PageUp / PageDown) |
+| `{` / `}`             | Up / down one paragraph                  |
+| `h` / `l`             | Left / right one character               |
+| `w` / `b` / `e`       | Next word / back one word / end of word  |
+| `?` text `enter`      | Search up                                |
+| `/` text `enter`      | Search down                              |
+| `n` / `N`             | Next / previous search result            |
+| `v` or `space`        | Start selection                          |
+| `y` or `enter`        | Copy, then close copy mode               |
+| `q` or `esc`          | Close without copying                    |
+| `cmd+v`               | Paste                                    |
+
+`ctrl+b` does not page up in copy mode. Use `ctrl+u` or `fn+up`.
 
 ## WezTerm (the window)
 | Key                   | Action                    |
